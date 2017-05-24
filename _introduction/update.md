@@ -13,9 +13,9 @@ On launch, we check for updates for all installed plugins, and if there’s any,
 
 ## How to setup a plugin to be updated by Sketch
 
-There is an additional entry in the `manifest.json` file contained within your plugin bundle that you need to define for updating to work. 
+There is an additional entry in the `manifest.json` file contained within your plugin bundle that you need to define for updating to work.
 
-The entry is called `appcastURL`, and it is a string specifying a URL to the appcast file. The appcast file contains information about updates to the plugin, like the versions of available updates and where the updates can be downloaded from. Sketch downloads this file to determine if there are plugin updates available. For more details about the appcast format, see [plugin bundle](bundles#appcasturl).
+The entry is called `appcastURL`, and it is a string specifying a URL to the appcast file. The appcast file contains information about updates to the plugin, like the versions of available updates and where the updates can be downloaded from. Sketch downloads this file to determine if there are plugin updates available. For more details about the appcast format, see [plugin bundles](/introduction/plugin-bundles/#appcast-url).
 
 Currently Sketch only allows the user to update to the latest version. Future versions of Sketch may provide additional options for the user to select which plugin version can be downloaded and installed.
 
@@ -32,7 +32,7 @@ For example, if your plugin displays some user interface elements within Sketch,
 
 The same goes for any persistent data that your plugin maintains. Any unsaved information should be written to disk when `Shutdown` is called.
 
-Do not include code in the `Startup` handler that could be run later. 
+Do not include code in the `Startup` handler that could be run later.
 
 
 ### The Appcast
